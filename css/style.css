@@ -1,0 +1,470 @@
+:root{
+    ---body-color: #1E1E1E;
+    ---main-color: #F6A824;
+    --main-click: #ffc96b;
+}
+html{
+    scroll-behavior: smooth;
+   
+}
+@font-face {
+    font-family: wolf ;
+    src: url(/fonts/Manrope-SemiBold.otf) format("opentype");
+}
+
+body{
+    background-image: linear-gradient(to left, #3a3a3a, #2d2d2d, #202020, #141414, #000000);
+    color: var(---main-color);
+    font-family: wolf;
+}
+.container{
+    height: 95vh;
+    padding: 30px;
+}
+hr{
+    width: 70%;
+    background-color: var(---main-color);
+    height: 1px;
+    border: none;
+}
+main{
+    background-image: linear-gradient(to bottom, #3a3a3a69, #2d2d2d5f, #20202042, #0000004f, #000000);
+}
+
+
+
+
+
+
+/*////////////////////////////////////////////////////////////header////////////////////////////////////////*/
+
+.c-header{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 50px;
+}
+.c-header__nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.c-nav__item{
+    text-decoration: none;
+    font-size: 17px;
+    color: var(---main-color);
+    
+}
+.c-nav__item:hover{
+    color: var(--main-click);
+    
+}
+.c-header__nav:hover .teste{
+    display: block
+    
+}
+
+
+/*////////////////////////////////////////////////////////////landingr////////////////////////////////////////*/
+
+
+
+
+.c-landing{
+   display: flex;
+   flex-direction: column;
+   background-image: url(/images/landingBackground.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+.c-landing__text{
+    margin-top: 120px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+.c-landing__tittle{
+    font-size: 9em;
+    font-weight: bolder;
+}
+.c-landing__arrow{
+    padding: 10px;
+    width: 65px;
+    background-color: var(---main-color);
+    border-radius: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+}
+.c-landing__arrow:hover{
+   background-color: var(--main-click);
+   transform: scale(1.05);
+}
+.c-landing__arrow img{
+    width: 30px;
+}
+
+
+
+
+/*////////////////////////////////////////////////////////////about////////////////////////////////////////*/
+
+.c-about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.c-about__image--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-about__image{
+    width: 70%;
+}
+.c-about__text--container{
+    display: flex;
+    align-items: center;;
+    flex-direction: column;
+}
+.c-about__tittle{
+    font-size: 4em;
+    font-weight: bolder;
+    padding: 23px 30px;
+    text-align: center;
+}
+.c-about__text{
+    font-size: 1.1em;
+    color: white;
+    text-indent: 50px;
+    letter-spacing: 2px;
+    line-height: 23px;
+}
+
+/*////////////////////////////////////////////////////////////films////////////////////////////////////////*/
+
+.c-films{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200vh;
+
+}
+.c-films__tittle{
+    margin: 30px;
+    font-size: 4em;
+    text-align: center;
+}
+.c-films--container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    gap: 20px;
+    width: 80%;
+    margin-top: 60px;
+}
+
+.film{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.input-sair{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+#sair{
+    display: none;
+}
+.sairinput{
+    margin-top: 10px;
+    width: 25px;
+    display: none;
+    transition: 1s;
+}
+.sairinput:hover{
+    transform: scale(1.1);
+}
+/*////////////////////////////////////////////////////////////film1////////////////////////////////////////*/
+
+.film1{
+    height: 500px;
+    background-color: #F6A824;
+    background-image: url(/images/film1/MV5BODAwOTJlYzAtODliZC00YzM4LWFlZjgtOTk0MDI3MDE3MmJlXkEyXkFqcGdeQXVyNDIyNjA2MTk@._V1_FMjpg_UX1000_.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filmcheck1{
+   display: none;
+}
+.filmlogo1{
+    display: none;
+}
+.film1-paragraf{
+    display: none;
+}
+.film1links{
+  display: none;
+}
+
+.filmcheck1:checked ~ .film1{
+    background-image: url(/images/film1/MV5BMTMzN2ViNDUtNGIxZS00YWIxLWJmZTMtYmFjYzIzOWJmYTkwXkEyXkFqcGdeQXVyNDIyNjA2MTk@._V1_FMjpg_UX1920_.jpg);
+   width: 900px;
+}
+.filmcheck1:checked ~ .film1 .filmlogo1{
+    display: block;
+    width: 300px;
+    margin-top: 50px;
+    margin-left:20px ;
+}
+.filmcheck1:checked ~ .film1 .film1-paragraf{
+    display: block;
+    width: 350px;
+    margin-top: 30px;
+    margin-left:20px ;
+    color: white;
+}
+.filmcheck1:checked ~ .film1  .film1links{
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left:20px ;
+}
+.filmcheck1:checked ~ .film1 .film1links a img{
+   width: 40px;
+}
+.filmcheck1:checked ~ .film1 .buttontrailer{
+    border: 1px solid white;
+    background-color: #00000000;
+    padding: 6px 15px;
+    margin-right: 10px;
+    border-radius: 150px;
+    color: white;
+}
+.filmcheck1:checked ~ .film1 .buttontrailer:hover{
+    border: 1px solid white;
+    background-color: #ffffff;
+    color: #000000;
+    
+}
+.filmcheck1:checked ~ .film1 .sairinput{
+    display: block;
+}
+
+
+
+/*////////////////////////////////////////////////////////////film2////////////////////////////////////////*/
+
+.film2{
+    height: 500px;
+    background-color: #F6A824;
+    background-image: url(/images/film2/poster.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filmcheck2{
+   display: none;
+}
+.filmlogo2{
+    display: none;
+}
+.film2-paragraf{
+    display: none;
+}
+.film2links{
+  display: none;
+}
+
+.filmcheck2:checked ~ .film2{
+    background-image: url(/images/film2/capa.jpg);
+    background-size: cover;
+    width: 900px;
+}
+.filmcheck2:checked ~ .film2 .filmlogo2{
+    display: block;
+    width: 300px;
+    margin-top: 50px;
+    margin-left:20px ;
+}
+.filmcheck2:checked ~ .film2 .film2-paragraf{
+    display: block;
+    width: 350px;
+    margin-top: 30px;
+    margin-left:20px ;
+    color: white;
+}
+.filmcheck2:checked ~ .film2  .film2links{
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left:20px ;
+}
+.filmcheck2:checked ~ .film2 .film2links a img{
+   width: 40px;
+}
+.filmcheck2:checked ~ .film2 .buttontrailer{
+    border: 1px solid white;
+    background-color: #00000000;
+    padding: 6px 15px;
+    margin-right: 10px;
+    border-radius: 150px;
+    color: white;
+}
+.filmcheck2:checked ~ .film2 .buttontrailer:hover{
+    border: 1px solid white;
+    background-color: #ffffff;
+    color: #000000;
+    
+}
+.filmcheck2:checked ~ .film2 .sairinput{
+    display: block;
+}
+
+
+/*////////////////////////////////////////////////////////////film3////////////////////////////////////////*/
+
+.film3{
+    height: 500px;
+    background-color: #F6A824;
+    background-image: url(/images/film3/poster.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filmcheck3{
+   display: none;
+}
+.filmlogo3{
+    display: none;
+}
+.film3-paragraf{
+    display: none;
+}
+.film3links{
+  display: none;
+}
+
+.filmcheck3:checked ~ .film3{
+    background-image: url(/images/film3/capa.jpg);
+    background-size: cover;
+    width: 900px;
+}
+.filmcheck3:checked ~ .film3 .filmlogo3{
+    display: block;
+    width: 300px;
+    margin-top: 50px;
+    margin-left:20px ;
+}
+.filmcheck3:checked ~ .film3 .film3-paragraf{
+    display: block;
+    width: 350px;
+    margin-top: 30px;
+    margin-left:20px ;
+    color: white;
+}
+.filmcheck3:checked ~ .film3  .film3links{
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left:20px ;
+}
+.filmcheck3:checked ~ .film3 .film3links a img{
+   width: 40px;
+}
+.filmcheck3:checked ~ .film3 .buttontrailer{
+    border: 1px solid white;
+    background-color: #00000000;
+    padding: 6px 15px;
+    margin-right: 10px;
+    border-radius: 150px;
+    color: white;
+}
+.filmcheck3:checked ~ .film3 .buttontrailer:hover{
+    border: 1px solid white;
+    background-color: #ffffff;
+    color: #000000;
+    
+}
+.filmcheck3:checked ~ .film3 .sairinput{
+    display: block;
+}
+
+
+/*////////////////////////////////////////////////////////////contact////////////////////////////////////////*/
+
+.c-contact{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.c-contact__form{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: column;
+}
+.c-contact__form form{
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.c-contact__form form input{
+    margin: 10px 0px;
+    background-color: #3a3a3a;
+    width: 300px;
+    height: 40px;
+    border-radius: 3px;
+    border-style: none;
+    color: #F6A824;
+    margin-bottom: 30px;
+}
+.textarea{
+    height: 80px !important;
+    display: flex;
+    align-items: flex-start;
+}
+.c-contact__button{
+    width: 300px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: var(---main-color);
+    color: white;
+    border-style: none;
+}
+.c-contact__button:hover{
+    background-color: var(--main-click);
+    color: white;
+}
+.c-contact__tittle{
+    font-size: 3em;
+    font-weight: bold;
+}
+.c-contact__image-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.c-contact__image{
+    width: auto;
+}
+
+
+/*////////////////////////////////////////////////////////////Footer////////////////////////////////////////*/
+
+footer{
+    background-color:var(---main-color);
+    height: 50vh;
+}
