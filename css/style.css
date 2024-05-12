@@ -148,26 +148,27 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 200vh;
+    height: auto;
 
 }
 .c-films__tittle{
     margin: 30px;
+    margin-bottom: 60px;
     font-size: 4em;
     text-align: center;
 }
 .c-films--container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 100%;
     gap: 20px;
     width: 80%;
-    margin-top: 60px;
 }
 
 .film{
+    height: 600px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
 }
 .input-sair{
     display: flex;
@@ -189,7 +190,6 @@ main{
 /*////////////////////////////////////////////////////////////film1////////////////////////////////////////*/
 
 .film1{
-    height: 500px;
     background-color: #F6A824;
     background-image: url(/images/film1/MV5BODAwOTJlYzAtODliZC00YzM4LWFlZjgtOTk0MDI3MDE3MmJlXkEyXkFqcGdeQXVyNDIyNjA2MTk@._V1_FMjpg_UX1000_.jpg);
     background-repeat: no-repeat;
@@ -261,7 +261,6 @@ main{
 /*////////////////////////////////////////////////////////////film2////////////////////////////////////////*/
 
 .film2{
-    height: 500px;
     background-color: #F6A824;
     background-image: url(/images/film2/poster.jpg);
     background-repeat: no-repeat;
@@ -333,7 +332,6 @@ main{
 /*////////////////////////////////////////////////////////////film3////////////////////////////////////////*/
 
 .film3{
-    height: 500px;
     background-color: #F6A824;
     background-image: url(/images/film3/poster.jpg);
     background-repeat: no-repeat;
@@ -398,6 +396,76 @@ main{
     
 }
 .filmcheck3:checked ~ .film3 .sairinput{
+    display: block;
+}
+
+/*////////////////////////////////////////////////////////////film3////////////////////////////////////////*/
+
+.film4{
+    background-color: #F6A824;
+    background-image: url(/images/film3/poster.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filmcheck4{
+   display: none;
+}
+.filmlogo4{
+    display: none;
+}
+.film4-paragraf{
+    display: none;
+}
+.film4links{
+  display: none;
+}
+
+.filmcheck4:checked ~ .film4{
+    background-image: url(/images/film3/capa.jpg);
+    background-size: cover;
+    width: 900px;
+}
+.filmcheck4:checked ~ .film4 .filmlogo4{
+    display: block;
+    width: 300px;
+    margin-top: 50px;
+    margin-left:20px ;
+}
+.filmcheck4:checked ~ .film4 .film4-paragraf{
+    display: block;
+    width: 350px;
+    margin-top: 30px;
+    margin-left:20px ;
+    color: white;
+}
+.filmcheck4:checked ~ .film4  .film4links{
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left:20px ;
+}
+.filmcheck4:checked ~ .film4 .film4links a img{
+   width: 40px;
+}
+.filmcheck4:checked ~ .film4 .buttontrailer{
+    border: 1px solid white;
+    background-color: #00000000;
+    padding: 6px 15px;
+    margin-right: 10px;
+    border-radius: 150px;
+    color: white;
+}
+.filmcheck4:checked ~ .film4 .buttontrailer:hover{
+    border: 1px solid white;
+    background-color: #ffffff;
+    color: #000000;
+    
+}
+.filmcheck4:checked ~ .film4 .sairinput{
     display: block;
 }
 
