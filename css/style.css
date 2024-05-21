@@ -135,8 +135,9 @@ main{
     text-align: center;
 }
 .c-about__text{
-    font-size: 1.1em;
+    font-size: 0.95em;
     color: white;
+    margin-bottom: 5px;
     text-indent: 50px;
     letter-spacing: 2px;
     line-height: 23px;
@@ -190,7 +191,6 @@ main{
 /*////////////////////////////////////////////////////////////film1////////////////////////////////////////*/
 
 .film1{
-    background-color: #F6A824;
     background-image: url(/images/film1/MV5BODAwOTJlYzAtODliZC00YzM4LWFlZjgtOTk0MDI3MDE3MmJlXkEyXkFqcGdeQXVyNDIyNjA2MTk@._V1_FMjpg_UX1000_.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,7 +210,7 @@ main{
 }
 
 .filmcheck1:checked ~ .film1{
-    background-image: url(/images/film1/MV5BMTMzN2ViNDUtNGIxZS00YWIxLWJmZTMtYmFjYzIzOWJmYTkwXkEyXkFqcGdeQXVyNDIyNjA2MTk@._V1_FMjpg_UX1920_.jpg);
+    background-image: url(/images/film1/MV5BMTMzN2ViNDUtNGIxZS00YWIxLWJmZTMtYmFjYzIzOWJmYTkwXkEyXkFqcGdeQXVyNDIyNjA2MTk@._V1_FMjpg_UX1920_.jpeg);
     width: 1100px;
 }
 .filmcheck1:checked ~ .film1 .filmlogo1{
@@ -261,7 +261,6 @@ main{
 /*////////////////////////////////////////////////////////////film2////////////////////////////////////////*/
 
 .film2{
-    background-color: #F6A824;
     background-image: url(/images/film2/poster.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -281,7 +280,7 @@ main{
 }
 
 .filmcheck2:checked ~ .film2{
-    background-image: url(/images/film2/capa.jpg);
+    background-image: url(/images/film2/capa.jpeg);
     background-size: cover;
     width: 1100px;
 }
@@ -332,7 +331,6 @@ main{
 /*////////////////////////////////////////////////////////////film3////////////////////////////////////////*/
 
 .film3{
-    background-color: #F6A824;
     background-image: url(/images/film3/poster.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -402,8 +400,7 @@ main{
 /*////////////////////////////////////////////////////////////film4////////////////////////////////////////*/
 
 .film4{
-    background-color: #F6A824;
-    background-image: url(/images/film4/poster.jpg);
+    background-image: url(/images/film4/poster.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -471,8 +468,7 @@ main{
 /*////////////////////////////////////////////////////////////film5////////////////////////////////////////*/
 
 .film5{
-    background-color: #F6A824;
-    background-image: url(/images/film5/poster.jpg);
+    background-image: url(/images/film5/poster.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -540,8 +536,7 @@ main{
 /*////////////////////////////////////////////////////////////film6////////////////////////////////////////*/
 
 .film6{
-    background-color: #F6A824;
-    background-image: url(/images/film6/poster.jpg);
+    background-image: url(/images/film6/poster.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
