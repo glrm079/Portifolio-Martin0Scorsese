@@ -171,6 +171,7 @@ main{
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 30px;
 }
+
 .input-sair{
     display: flex;
     justify-content: flex-end;
@@ -221,7 +222,7 @@ main{
 }
 .filmcheck1:checked ~ .film1 .film1-paragraf{
     display: block;
-    width: 350px;
+    width: 400px;
     margin-top: 30px;
     margin-left:20px ;
     color: white;
@@ -254,6 +255,10 @@ main{
 }
 .filmcheck1:checked ~ .film1 .sairinput{
     display: block;
+}
+.filmcheck1:checked ~ .film1 .film-content{
+    width: 80%;
+    background-image: linear-gradient(to right,#000000,rgba(0, 0, 0, 0.492), rgba(0, 0, 0, 0));
 }
 
 
@@ -292,7 +297,7 @@ main{
 }
 .filmcheck2:checked ~ .film2 .film2-paragraf{
     display: block;
-    width: 350px;
+    width: 400px;
     margin-top: 30px;
     margin-left:20px ;
     color: white;
@@ -325,6 +330,10 @@ main{
 }
 .filmcheck2:checked ~ .film2 .sairinput{
     display: block;
+}
+.filmcheck2:checked ~ .film2 .film-content{
+    width: 80%;
+    background-image: linear-gradient(to right,#000000,rgba(0, 0, 0, 0.492), rgba(0, 0, 0, 0));
 }
 
 
@@ -362,7 +371,7 @@ main{
 }
 .filmcheck3:checked ~ .film3 .film3-paragraf{
     display: block;
-    width: 350px;
+    width: 400px;
     margin-top: 30px;
     margin-left:20px ;
     color: white;
@@ -395,6 +404,10 @@ main{
 }
 .filmcheck3:checked ~ .film3 .sairinput{
     display: block;
+}
+.filmcheck3:checked ~ .film3 .film-content{
+    width: 80%;
+    background-image: linear-gradient(to right,#000000,rgba(0, 0, 0, 0.492), rgba(0, 0, 0, 0));
 }
 
 /*////////////////////////////////////////////////////////////film4////////////////////////////////////////*/
@@ -431,7 +444,7 @@ main{
 }
 .filmcheck4:checked ~ .film4 .film4-paragraf{
     display: block;
-    width: 350px;
+    width: 450px;
     margin-top: 30px;
     margin-left:20px ;
     color: white;
@@ -464,6 +477,10 @@ main{
 }
 .filmcheck4:checked ~ .film4 .sairinput{
     display: block;
+}
+.filmcheck4:checked ~ .film4 .film-content{
+    width: 80%;
+    background-image: linear-gradient(to right,#000000,rgba(0, 0, 0, 0.492), rgba(0, 0, 0, 0));
 }
 /*////////////////////////////////////////////////////////////film5////////////////////////////////////////*/
 
@@ -499,7 +516,7 @@ main{
 }
 .filmcheck5:checked ~ .film5 .film5-paragraf{
     display: block;
-    width: 350px;
+    width: 450px;
     margin-top: 30px;
     margin-left:20px ;
     color: white;
@@ -533,6 +550,10 @@ main{
 .filmcheck5:checked ~ .film5 .sairinput{
     display: block;
 }
+.filmcheck5:checked ~  .film5 .film-content{
+    width: 80%;
+    background-image: linear-gradient(to right,#000000,rgba(0, 0, 0, 0.492), rgba(0, 0, 0, 0));
+}
 /*////////////////////////////////////////////////////////////film6////////////////////////////////////////*/
 
 .film6{
@@ -561,13 +582,13 @@ main{
 }
 .filmcheck6:checked ~ .film6 .filmlogo6{
     display: block;
-    width: 300px;
+    width: 450px;
     margin-top: 50px;
     margin-left:20px ;
 }
 .filmcheck6:checked ~ .film6 .film6-paragraf{
     display: block;
-    width: 350px;
+    width: 450px;
     margin-top: 10px;
     margin-left:20px ;
     color: white;
@@ -601,6 +622,10 @@ main{
 .filmcheck6:checked ~ .film6 .sairinput{
     display: block;
     
+}
+.filmcheck6:checked ~  .film6 .film-content{
+    width: 80%;
+    background-image: linear-gradient(to right,#000000,rgba(0, 0, 0, 0.492), rgba(0, 0, 0, 0));
 }
 /*////////////////////////////////////////////////////////////contact////////////////////////////////////////*/
 
